@@ -8,7 +8,7 @@ The following aspects have to be considered to pick one:
 
 In the general case both should have the same kind of efficiency, unless you absolutely don't want to pay the cost of constructing a map.
 
-If this `KindToString` is in the critical path you might consider taking the code-based approach, as every entry will be resolved in O(1) instead of O(logn).
+If this `ToString` is in the critical path you might consider taking the code-based approach, as every entry will be resolved in O(1) instead of O(logn).
 
 The data-based solution is more concise and elegant. If the data comes from another source (file, network) then it would be the only viable choice.
 
